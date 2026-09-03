@@ -79,3 +79,10 @@ are good ideas — that judgment already happened at drafting.
 
 Editing these docs re-fires the plan-change hook. Ignore those prompts for any doc you touched
 as part of this run — the reconciliation is already in flight.
+
+## The trigger
+
+`plan-change-notify.mjs` in this directory is the PostToolUse hook that nudges toward this
+skill; it's wired up in `~/.claude/settings.json` (`hooks.PostToolUse`, matcher
+`Edit|Write|MultiEdit`). If this skill is installed somewhere else, that `command` path must be
+updated to match.
