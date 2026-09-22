@@ -57,7 +57,10 @@ resurrect that name; use the dated one.
    - `## How to work through these`: one item per session and one commit per item, the
      commit style, the test/build commands and gotchas from step 4, a note that item numbers
      are local to this file, and a "check whether the finding still holds first" instruction,
-     since the code may have moved since the review.
+     since the code may have moved since the review. Also instruct: update that item's
+     **Status** line (and its row in the Summary table) right after finishing it — not all
+     at once at the end of the session — so the file stays accurate if work stops partway
+     through.
    - `## Suggested order` (by severity and by dependency between items, e.g. a shared ordering
      rule that two items must agree on) and a `## Summary table` (`#`, area, file, severity,
      verification, status).
