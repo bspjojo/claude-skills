@@ -63,7 +63,9 @@ resurrect that name; use the dated one.
      through.
    - `## Suggested order` (by severity and by dependency between items, e.g. a shared ordering
      rule that two items must agree on) and a `## Summary table` (`#`, area, file, severity,
-     verification, status).
+     verification, status), where the `#` cell is a markdown link to that item's own
+     `## Item N — ...` heading (e.g. `[1](#item-1--short-description)`, GitHub-style anchor
+     slug) so the table can jump straight to it.
    - One `## Item N — <short description>` section per finding, separated by `---`, each with:
      **File** (linked, with line), **Verification** (Confirmed/Plausible and what you traced),
      **Problem**, **Failure scenario** (concrete inputs to wrong output), **Suggested approach**
