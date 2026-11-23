@@ -1,0 +1,7 @@
+{
+  "name": "jt-dev",
+  "description": "Workflow skills for Claude Code: plan docs (plan, analyze-plan, reconcile-plans), code review to file, docs, and dev/docker/test/e2e/migrate runners.",
+  "author": {
+    "name": "thompsonjoseph0"
+  }
+}

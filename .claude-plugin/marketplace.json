@@ -1,0 +1,14 @@
+{
+  "name": "jt-dev",
+  "description": "Personal marketplace for the jt-dev Claude Code plugin.",
+  "owner": {
+    "name": "thompsonjoseph0"
+  },
+  "plugins": [
+    {
+      "name": "jt-dev",
+      "source": "./",
+      "description": "Workflow skills for Claude Code: plan docs, code review to file, docs, and dev/docker/test/e2e/migrate runners."
+    }
+  ]
+}

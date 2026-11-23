@@ -60,7 +60,7 @@ unaffected: record them as checked-and-clean.
 ## 4. Re-ground the affected docs
 
 For each doc with a real staleness finding, run it through the full `analyze-plan` loop: invoke
-`Skill(analyze-plan, <that doc's slug>)` and let it converge (grounding → gap → self-review →
+the `analyze-plan` skill (`jt-dev:analyze-plan` when installed as a plugin) with that doc's slug and let it converge (grounding → gap → self-review →
 question rounds). Do the affected docs one at a time.
 
 If `analyze-plan` isn't available, run its loop inline: verify every file/line and "already
@@ -83,6 +83,6 @@ as part of this run — the reconciliation is already in flight.
 ## The trigger
 
 `plan-change-notify.mjs` in this directory is the PostToolUse hook that nudges toward this
-skill; it's wired up in `~/.claude/settings.json` (`hooks.PostToolUse`, matcher
-`Edit|Write|MultiEdit`). If this skill is installed somewhere else, that `command` path must be
-updated to match.
+skill (matcher `Edit|Write|MultiEdit`). When installed as a plugin, it's wired up automatically by
+the plugin's `hooks/hooks.json`. If you copy this skill into `~/.claude/skills` instead, add the
+hook to `~/.claude/settings.json` yourself, pointing its `command` at this file.
